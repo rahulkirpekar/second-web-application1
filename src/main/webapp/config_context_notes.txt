@@ -1,0 +1,19 @@
+WebApplication Configuration:-
+------------------------------
+
+	1) ServletConfig:- [A<-----A-config]
+	------------------
+
+
+	A---configuration(value1,value2,value3,value4,value5,...valueNth)
+
+
+	
+  	DRIVERCLASS
+  	USERNAME
+  	PASSWORD
+
+
+
+	2) ServletContext:-
+	------------------

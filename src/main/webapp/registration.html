@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Student Registration page</title>
+</head>
+<body>
+		<h1>Student Registration Page</h1>
+	<form action="insertStudent" method="post">
+		<table>
+			<tr>
+				<td>FirstName</td>
+				<td><input type="text" name="firstName"/></td>
+				<td>LastName</td>
+				<td><input type="text" name="lastName"/></td>
+				<td>MiddleName</td>
+				<td><input type="text" name="middleName"/></td>
+			</tr>
+			<tr><td colspan="6" style="height:20px;"></td></tr>
+			<tr>
+				<td>Date of Birth</td>
+				<td><input type="date" name="dob"/></td>
+			</tr>
+			<tr><td colspan="6" style="height:20px;"></td></tr>
+			<tr>
+				<td>
+					Gender
+				</td>
+				<td>
+					<input type="radio" name="gender" value="male"/>Male 
+				</td>
+				<td>
+					<input type="radio" name="gender" value="female"/>Female 
+				</td>
+			</tr>
+			<tr><td colspan="6" style="height:20px;"></td></tr>
+			<tr>
+				<td>
+					Hobbies
+				</td>
+				<td>
+					<input type="checkbox" name="hobbies" value="Sports"/>Sports
+				</td>
+				<td>
+					<input type="checkbox" name="hobbies" value="ListeningSong"/>Listening Song
+				</td>
+				<td>
+					<input type="checkbox" name="hobbies" value="Reading"/>Reading
+				</td>
+			</tr>
+			<tr><td colspan="6" style="height:20px;"></td></tr>
+			
+		<tr><td colspan="6" style="height: 20px;"></td></tr>
+			
+			<tr>
+				<td>Address </td>
+				<td><textarea rows="4" cols="50" name="address"></textarea></td>
+			</tr>			
+			
+			<tr><td colspan="6" style="height: 20px;"></td></tr>
+			<tr>
+				<td>Choose a State </td>
+				<td>
+						<select name="state">
+								<option value="Gujarat">Gujarat
+								<option value="Maharastra">Maharastra
+								<option value="Madhyapradesh">Madhyapradesh
+								<option value="Rajasthan">Rajasthan
+								<option value="Uttarpradesh">Uttarpradesh
+						</select>
+				</td>
+			</tr>	
+			<tr><td colspan="6" style="height: 20px;"></td></tr>
+			
+			<tr>
+				<td> </td>
+				<td><input type="submit"/></td>
+			</tr>		
+				
+		
+		</table>
+	</form>
+</body>
+</html>

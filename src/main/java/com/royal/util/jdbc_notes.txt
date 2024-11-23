@@ -1,0 +1,97 @@
+JDBC:- "Java to Database Connectivity"
+--------
+
+		 CRUD
+		  |
+		Database
+		connection
+		  |
+	Java---->Data----->Database(MySql/Oracle/Postgress/MsSqlServer)
+				   -------------------------------------
+					jdbc jar---[Mysql]--mysql-connector.jar
+					--------------------------------------
+							|
+						   DRIVERCLASS	
+			
+1) URLNAME
+2) DRIVERCLASS
+3) USERNAME
+4) PASSWORD
+
+
+	CREATE TABLE student
+	(
+		rno int AUTO_INCREMENT PRIMARY KEY,
+		name varchar(50),
+		std int,
+		marks int
+	);
+
+
+
+
+
+		Tyep of interface in JDBC
+		---------------------------
+
+
+-------------------------------------
+1) Statement	2) PreparedStatement		3) CallableStatement
+-------------------------------------
+		|
+-------------------------------------
+   |			 |
+executeUpdate()	    executeQuery()	
+ |			  |
+insert			select
+update
+delete
+
+
+
+
+
+
+
+
+
+
+	Servlet
+
+Spring
+
+
+	===> JDBC(DbConnection + (insert,update,delete,get All Records))
+
+
+		DbConnection---connn----SQL
+
+		===>Statement--[CRUD]
+		===>PreparedStatement--[CRUD]
+
+
+
+	===> CRUD(validation,Insert,edit,update,delete,Display All Records)
+
+		(JDBC + Servlet + Jsp)  + [Data-Validation]
+
+
+
+	===> Session Tracking---[login<--->logout]
+
+
+	===> Servlet(filter and listener)
+
+	===> Jsp(JSTL)
+
+	---------------END-----------------------
+	
+
+
+
+
+
+
+
+
+

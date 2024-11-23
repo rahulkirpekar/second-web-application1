@@ -1,0 +1,167 @@
+Basic Servlet
+
+	session tracking
+	filter
+	listener
+
+Jsp
+	Basic----
+
+
+	CRUD Application = JSP + SERVLET + JDBC
+
+
+JSP - Java server Pages
+
+HTML(html tags)--->JSP(html tags + Java code)
+
+
+
+Servlet----->JSP
+
+
+home.jsp--->convert into servlet--->[home_jsp.java]---servlet name--->[home_jsp]
+				    -----------------					
+					home_jsp.java(servlet class)
+					   |
+					compile
+					   |
+					home_jsp.class
+					   |
+					  run
+					   |
+					  JRE
+
+1) jsp convert into servlet java file
+2) compile[servlet file to class file]
+3) run class file
+
+
+class FirstServlet extends HttpServlet
+{
+	// dm's
+	int count = 0;// <%!  int count = 0;  %>
+
+	void test1()
+	{
+
+
+	}
+	service()
+	{
+		//---> <%   %>
+		local variables
+
+		out.print(10+20);// 30
+
+	}
+}
+
+scriptlet tags:-
+-----------------
+
+	1) scripting elements---[<%   %>]---service method
+
+	2) declaration rag------[<%!  int count = 0;  %>]
+
+
+	<%!
+		void test1()
+		{
+
+
+		}
+	%>
+
+
+	3) expression tag-------[<%=10+20%>]
+
+test1.jsp---->test1_jsp.java
+	      ---------------
+		    |
+	       test1_jsp.class
+	      ---------------
+		    |
+		   run	
+
+
+test1_jsp.java
+--------------
+
+public class test1_jsp extends HttpServlet
+{
+	int test1()
+	{
+		int no1=200,no2=100;
+		return (no1+no2);
+	}
+	service()
+	{
+			
+		out.print(300);
+		out.print("Hi I am Expression Tag");
+
+		for(int i=1 ; i <=10 ; i++)
+		{
+			out.println(10+" * " + i +" = "+ (10*i)+"<br>");	
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
